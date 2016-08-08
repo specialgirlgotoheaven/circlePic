@@ -1,0 +1,57 @@
+*{
+    color:white;
+}
+.picCircle {
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+.picCircle{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+.picCircle li{
+    list-style-type: none;
+    display: inline-block;
+}
+.arrow{
+    position: absolute;
+    top:50%;
+    margin-top: -15px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+.pre{
+    margin-left:40px;
+}
+.next{
+    margin-left:470px;
+}
+.footButtons{
+    height: 25px;
+    position: absolute;
+    top:90%;
+    margin-left: 170px;
+
+}
+.nav{
+    width: 130px;
+    height: 20px;
+    margin: 10px auto;
+    position: absolute;
+}
+.nav li{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 20px;
+    cursor: pointer;
+
+}
+.active{
+    color: black;
+}
