@@ -5,9 +5,21 @@
 <script src="../js/jquery-1.11.2.min.js"></script>
 <script src="../js/picCircle7.js"></script>
 <script>
+    
     $(function () {
-        $(".picCircle").myPicCircle({'direction':"horizon"});
-        //new picCircleCenter($("#bbb"));
+        /**
+         * myPicCircle插件配置说明,
+         * direction表示水平还是垂直移动,默认水平
+         * autoCircleTime表示播放速度,默认2000
+         * clearAutoPlay表示是否默认开启自动轮播
+         * */
+        //$(".picCircle").myPicCircle({'direction':"horizon",'autoCircleTime':2000,"clearAutoPlay":false});
+        var test=new picCircle($(".picCircle"));
+
+        $("#clearAutoPlay").click(function () {
+            test.clearAutoCircle(true);
+        });
+
     });
 
 </script>
@@ -15,9 +27,11 @@
     <title>图片轮播</title>
 </head>
 <body>
+<button id="clearAutoPlay">清除自动播放</button>
+
 <div class="container">
     <div class="panel">
-        <div id="aaa" class="picCircle">
+        <div class="picCircle">
             <ul class="img-ct">
                 <li class="pic" data-value="0"><img src="../img/pic1.png" height="500" width="500"></li>
                 <li class="pic" data-value="1"><img src="../img/pic2.png" height="500" width="500"></li>
@@ -35,6 +49,24 @@
                 </ul>
             </div>
         </div>
+        <!--<div class="picCircle">-->
+            <!--<ul class="img-ct">-->
+                <!--<li class="pic" data-value="0"><img src="../img/pic1.png" height="500" width="500"></li>-->
+                <!--<li class="pic" data-value="1"><img src="../img/pic2.png" height="500" width="500"></li>-->
+                <!--<li class="pic" data-value="2"><img src="../img/pic3.png" height="500" width="500"></li>-->
+                <!--<li class="pic" data-value="3"><img src="../img/pic4.png" height="500" width="500"></li>-->
+            <!--</ul>-->
+            <!--<a class="pre arrow" href="#"><<<</a>-->
+            <!--<a class="next arrow" href="#">>>></a>-->
+            <!--<div class="footButtons">-->
+                <!--<ul class="nav">-->
+                    <!--<li class="active">1 </li>-->
+                    <!--<li > 2 </li>-->
+                    <!--<li > 3 </li>-->
+                    <!--<li > 4 </li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
     </div>
 </div>
 </body>

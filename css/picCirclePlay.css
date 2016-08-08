@@ -1,5 +1,11 @@
 *{
+    /*暂时暴力的颜色设置*/
     color:white;
+}
+button{
+    /*暂时暴力的颜色设置*/
+    color:black;
+
 }
 .picCircle {
     width: 500px;
